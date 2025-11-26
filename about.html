@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Agu Kelechi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="waveform"></canvas>
+
+  <header class="site-header">
+    <div class="container flex justify-between items-center">
+      <a href="index.html" class="logo">klay</a>
+      <nav>
+        <ul class="flex gap-6">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <a href="index.html#contact" class="btn-small">Let's Talk</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Profile Section -->
+    <section class="container" style="padding-top: 150px; padding-bottom: 50px;">
+      <div class="profile-header reveal-on-scroll">
+        <img src="assets/profile.jpg" alt="Agu Kelechi" class="profile-image">
+        <div class="profile-info">
+          <h2 class="profile-name">Agu Kelechi</h2>
+          <p class="profile-title">IT Manager & Product Designer</p>
+          <p class="profile-location">📍 Lagos, Nigeria</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container hero" style="padding-bottom: 100px; padding-top: 0;">
+      <div class="testimonials-split" style="align-items: start;">
+        
+        <!-- Left: Bio -->
+        <div class="testimonials-static reveal-on-scroll">
+          <div class="badge">IT & Product Design</div>
+          <h1 class="hero-title" style="font-size: 4rem;">Building systems<br>that scale.</h1>
+          <p class="section-subtitle" style="max-width: 500px; margin-bottom: 2rem;">
+            I'm a technology professional specializing in IT infrastructure and product design. With a background spanning network engineering, IT management, and UX design, I build robust systems and intuitive digital experiences that drive measurable results.
+          </p>
+          <p class="section-subtitle" style="max-width: 500px;">
+            From enhancing security protocols by 30% to designing products that improve customer satisfaction by 25%, I focus on solutions that combine technical precision with user-centered design.
+          </p>
+        </div>
+
+        <!-- Right: Bento Grid of Interests -->
+        <div class="bento-grid-about reveal-on-scroll">
+          <div class="bento-scroll-wrapper">
+            <div class="bento-scroll-track">
+              
+              <!-- Item 1: Input Source (Media) -->
+              <div class="glass-card bento-item media-card">
+                <div class="card-header flex justify-between items-center">
+                  <div class="flex items-center gap-2">
+                    <span class="tag">Input Source</span>
+                    <div class="recording-indicator"></div>
+                  </div>
+                  <span class="year">Watching</span>
+                </div>
+                
+                <div class="media-content">
+                  <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Pantheon</h3>
+                  <p class="text-secondary">Uploaded Intelligence.</p>
+                </div>
+                
+                <div class="show-thumbnail">
+                  <img src="assets/pantheon-thumb.png" alt="Pantheon" />
+                </div>
+              </div>
+
+              <!-- Item 2: Playing (Gaming) -->
+              <div class="glass-card bento-item game-card">
+                <div class="card-header flex justify-between items-center">
+                  <span class="tag">Playing</span>
+                  <span class="year">Active</span>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Call of Duty Mobile</h3>
+                <p class="text-secondary">Battle Royale & Multiplayer.</p>
+                <div class="game-thumbnail">
+                  <img src="assets/cod-thumb.png" alt="Call of Duty Mobile" />
+                </div>
+              </div>
+
+              <!-- Item 3: Simulation (Gaming) -->
+              <div class="glass-card bento-item game-card">
+                <div class="card-header flex justify-between items-center">
+                  <span class="tag">Simulation</span>
+                  <span class="year">Playing</span>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Cyberpunk 2077</h3>
+                <p class="text-secondary">Phantom Liberty Expansion.</p>
+                <div class="game-thumbnail">
+                  <img src="assets/cyberpunk-thumb.png" alt="Cyberpunk 2077" />
+                </div>
+              </div>
+
+              <!-- Item 4: Supporting (Football) -->
+              <div class="glass-card bento-item game-card">
+                <div class="card-header flex justify-between items-center">
+                  <span class="tag">Supporting</span>
+                  <span class="year">Always</span>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Manchester City</h3>
+                <p class="text-secondary">Sky Blues. CTID.</p>
+                <div class="game-thumbnail">
+                  <img src="assets/mancity-thumb.png" alt="Manchester City" />
+                </div>
+              </div>
+
+               <!-- Item 5: Stack (Tools) -->
+               <div class="glass-card bento-item">
+                <div class="card-header flex justify-between items-center">
+                  <span class="tag">Toolkit</span>
+                  <span class="year">Daily</span>
+                </div>
+                <div class="flex gap-3 flex-wrap">
+                  <span class="tech-logo" style="font-size: 0.9rem;">VS Code</span>
+                  <span class="tech-logo" style="font-size: 0.9rem;">Figma</span>
+                  <span class="tech-logo" style="font-size: 0.9rem;">Arc</span>
+                  <span class="tech-logo" style="font-size: 0.9rem;">Linear</span>
+                </div>
+              </div>
+
+              <!-- Duplicate cards for infinite scroll -->
+              <div class="glass-card bento-item media-card">
+                <div class="card-header flex justify-between items-center">
+                  <div class="flex items-center gap-2">
+                    <span class="tag">Input Source</span>
+                    <div class="recording-indicator"></div>
+                  </div>
+                  <span class="year">Watching</span>
+                </div>
+                
+                <div class="media-content">
+                  <div class="netflix-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M5 3L8 21L13 3L16 21L19 3" stroke="#E50914" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Pantheon</h3>
+                  <p class="text-secondary">Uploaded Intelligence.</p>
+                </div>
+                
+                <div class="show-thumbnail">
+                  <img src="assets/pantheon-thumb.png" alt="Pantheon" />
+                </div>
+              </div>
+
+              <div class="glass-card bento-item game-card">
+                <div class="card-header flex justify-between items-center">
+                  <span class="tag">Playing</span>
+                  <span class="year">Active</span>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Call of Duty Mobile</h3>
+                <p class="text-secondary">Battle Royale & Multiplayer.</p>
+                <div class="game-thumbnail">
+                  <img src="assets/cod-thumb.png" alt="Call of Duty Mobile" />
+                </div>
+              </div>
+
+              <div class="glass-card bento-item game-card">
+                <div class="card-header flex justify-between items-center">
+                  <span class="tag">Simulation</span>
+                  <span class="year">Playing</span>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Cyberpunk 2077</h3>
+                <p class="text-secondary">Phantom Liberty Expansion.</p>
+              </div>
+
+              <div class="glass-card bento-item game-card">
+                <div class="card-header flex justify-between items-center">
+                  <span class="tag">Supporting</span>
+                  <span class="year">Always</span>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Manchester City</h3>
+                <p class="text-secondary">Sky Blues. CTID.</p>
+                <div class="game-thumbnail">
+                  <img src="assets/mancity-thumb.png" alt="Manchester City" />
+                </div>
+              </div>
+
+              <div class="glass-card bento-item">
+                <div class="card-header flex justify-between items-center">
+                  <span class="tag">Toolkit</span>
+                  <span class="year">Daily</span>
+                </div>
+                <div class="flex gap-3 flex-wrap">
+                  <span class="tech-logo" style="font-size: 0.9rem;">VS Code</span>
+                  <span class="tech-logo" style="font-size: 0.9rem;">Figma</span>
+                  <span class="tech-logo" style="font-size: 0.9rem;">Arc</span>
+                  <span class="tech-logo" style="font-size: 0.9rem;">Linear</span>
+                </div>
+              </div>
+
+              <!-- Item 6: AI Arts -->
+              <div class="glass-card bento-item ai-art-card">
+                <div class="card-header flex justify-between items-center">
+                  <span class="tag">AI Arts</span>
+                  <span class="year">Generated</span>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Digital Portraits</h3>
+                <p class="text-secondary">AI-generated artwork.</p>
+                <div class="ai-art-gallery">
+                  <img src="assets/avatar1.png" alt="AI Art 1" class="ai-art-image active" />
+                  <img src="assets/avatar2.png" alt="AI Art 2" class="ai-art-image" />
+                  <img src="assets/avatar3.png" alt="AI Art 3" class="ai-art-image" />
+                  <div class="ai-signature">Klay</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="container" style="padding-bottom: 100px;">
+      <div class="work-experience">
+        <h3 class="work-section-title">WORK EXPERIENCE</h3>
+        
+        <div class="work-item reveal-on-scroll">
+          <div class="work-header">
+            <div class="work-title-group">
+              <h4 class="work-position">IT Manager | Targitt</h4>
+              <p class="work-company">Experiential Limited</p>
+            </div>
+            <span class="work-date">May 2024 - Present</span>
+          </div>
+          <div class="work-description">
+            <p>Installed and maintained IT infrastructure, enhancing security by 30%.</p>
+            <p>Set up in-office internet system, boosting productivity.</p>
+            <p>Collaborated with solar energy providers, ensuring uninterrupted power supply.</p>
+            <p>Provided IT support with a 95% ticket resolution satisfaction rate.</p>
+            <p>Trained 4 staff on new systems, increasing productivity by 19%.</p>
+            <p>Managed software updates across 16 systems, optimizing performance.</p>
+            <p>Implemented hardware protection strategies, securing systems.</p>
+          </div>
+        </div>
+
+        <div class="work-item reveal-on-scroll">
+          <div class="work-header">
+            <div class="work-title-group">
+              <h4 class="work-position">Product Designer | Winnovit</h4>
+              <p class="work-company">Winnovit</p>
+            </div>
+            <span class="work-date">Jan 2024 - March 2024 (Remote)</span>
+          </div>
+          <div class="work-description">
+            <p>Optimized product features using customer feedback, improving customer satisfaction by 25%.</p>
+            <p>Developed 2 prototypes with rapid prototyping, reducing the product development cycle by 5%.</p>
+            <p>Collaborated with engineers and product managers to ideate and brainstorm.</p>
+            <p>Designed a user-friendly support center, decreasing user inquiries by 40% and increasing satisfaction by 16%.</p>
+          </div>
+        </div>
+
+        <div class="work-item reveal-on-scroll">
+          <div class="work-header">
+            <div class="work-title-group">
+              <h4 class="work-position">Network Engineering Intern | EKEDC</h4>
+              <p class="work-company">Eko Electricity Distribution Company</p>
+            </div>
+            <span class="work-date">May 2020 - Nov 2020</span>
+          </div>
+          <div class="work-description">
+            <p>Supported senior engineers in monitoring and troubleshooting network systems, significantly reducing downtime.</p>
+            <p>Assisted in installing and managing routers and switches, enhancing connectivity across company locations.</p>
+            <p>Conducted routine security checks, ensuring compliance and minimizing risks.</p>
+            <p>Collaborated in documenting network configurations for accurate system upgrades.</p>
+            <p>Provided technical support to internal teams, ensuring smooth operations.</p>
+            <p>Managed network inventory, optimizing hardware resource allocation.</p>
+            <p>Coordinated closely with manufacturers to maintain production quality, boosting product sales by 12%.</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spotify Playlist Section -->
+    <section class="container" style="padding-bottom: 100px;">
+      <div class="spotify-section reveal-on-scroll">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <div class="badge">Audio Focus</div>
+          <h2 class="section-title" style="margin-top: 1rem;">Current Rotation</h2>
+          <p class="section-subtitle" style="max-width: 600px;">
+            A curated playlist of tracks that fuel my creative process—from cinematic scores to ambient beats.
+          </p>
+        </div>
+        <div class="spotify-embed-wrapper">
+          <iframe 
+            style="border-radius:12px" 
+            src="https://open.spotify.com/embed/playlist/11mJz6u4SlgouyqLFFA4l8?utm_source=generator&theme=0" 
+            width="100%" 
+            height="380" 
+            frameBorder="0" 
+            allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div class="flex justify-between items-center">
+      <div>&copy; 2025 Agu Kelechi.</div>
+      <div class="social-links-grid">
+        <a href="https://x.com/k4l4chi" target="_blank" class="social-icon" aria-label="Twitter/X">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/agu-kelechi-5314a122a/" target="_blank" class="social-icon" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a href="https://www.behance.net/AguKelechi" target="_blank" class="social-icon" aria-label="Behance">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h5.5a2.5 2.5 0 1 1 0 5H3V7z"></path><path d="M3 12h6a3 3 0 1 1 0 6H3v-6z"></path><path d="M14 7h7"></path><path d="M16 12h5a3 3 0 1 0-5.5-2"></path></svg>
+        </a>
+        <a href="https://github.com/CommitMeMaybe" target="_blank" class="social-icon" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
