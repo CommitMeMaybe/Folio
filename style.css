@@ -286,16 +286,29 @@ nav ul li a:hover {
 .tech-logos-wrapper {
   margin-top: 4rem;
   width: 100%;
-  overflow: hidden;
-  mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+  overflow-x: auto; /* Enable horizontal scroll */
+  overflow-y: hidden;
+  white-space: nowrap;
+  cursor: grab;
+  /* Hide scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.tech-logos-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.tech-logos-wrapper:active {
+  cursor: grabbing;
 }
 
 .tech-logos-track {
   display: flex;
   gap: 4rem;
   width: max-content;
-  animation: scroll 30s linear infinite;
+  /* animation: scroll 30s linear infinite; Removed for JS control */
+  padding: 0 2rem;
 }
 
 .tech-logo {
@@ -307,16 +320,12 @@ nav ul li a:hover {
   white-space: nowrap;
   opacity: 0.7;
   transition: opacity 0.3s, color 0.3s;
+  user-select: none;
 }
 
 .tech-logo:hover {
   opacity: 1;
   color: var(--text-primary);
-}
-
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
 }
 
 /* Glass Cards */
@@ -396,6 +405,11 @@ nav ul li a:hover {
   justify-content: center;
   margin-top: 2rem;
   transform-style: preserve-3d;
+  cursor: grab;
+}
+
+.carousel-3d-wrapper:active {
+  cursor: grabbing;
 }
 
 .carousel-3d {
@@ -403,7 +417,7 @@ nav ul li a:hover {
   width: 350px; /* Wider cards */
   height: 450px;
   transform-style: preserve-3d;
-  animation: rotate3d 20s linear infinite; /* Faster rotation */
+  /* animation: rotate3d 20s linear infinite; Removed for JS control */
 }
 
 .carousel-item {
@@ -413,13 +427,12 @@ nav ul li a:hover {
   left: 0;
   top: 0;
   transform-origin: center;
-  /* Arranged in a circle with 6 items = 60deg apart */
-  /* TranslateZ pushes them out to form the circle radius */
   transform: 
     rotateY(calc(var(--i) * 60deg)) 
     translateZ(550px); /* Increased radius for more space */
-  transition: all 0.5s ease;
+  transition: transform 0.5s ease;
   -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, rgba(0,0,0,0.2)); /* Reflection effect */
+  user-select: none;
 }
 
 .carousel-item img {
@@ -430,25 +443,13 @@ nav ul li a:hover {
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.15);
   transition: transform 0.3s ease;
+  pointer-events: none;
 }
 
 /* Hover effect to bring item forward */
 .carousel-item:hover img {
   transform: scale(1.1);
   border-color: rgba(255, 255, 255, 0.4);
-}
-
-@keyframes rotate3d {
-  0% {
-    transform: perspective(1000px) rotateY(0deg);
-  }
-  100% {
-    transform: perspective(1000px) rotateY(360deg);
-  }
-}
-
-.carousel-3d:hover {
-  animation-play-state: paused;
 }
 
 /* Projects Section */
