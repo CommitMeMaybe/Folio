@@ -34,9 +34,27 @@
           <li><a href="about.html">About</a></li>
         </ul>
       </nav>
-      <a href="#contact" class="btn-small">Let's Talk</a>
+      <a href="#contact" class="btn-small desktop-only">Let's Talk</a>
+      
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu">
+    <nav>
+      <ul>
+        <li><a href="index.html" onclick="toggleMobileMenu()">Home</a></li>
+        <li><a href="#projects" onclick="toggleMobileMenu()">Projects</a></li>
+        <li><a href="about.html" onclick="toggleMobileMenu()">About</a></li>
+        <li><a href="#contact" onclick="toggleMobileMenu()">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <main id="home">
     <!-- Hero Section -->

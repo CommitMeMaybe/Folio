@@ -204,3 +204,28 @@ function initScrollAnimations() {
     observer.observe(el);
   });
 }
+
+// Mobile Menu Toggle
+function toggleMobileMenu() {
+  const menu = document.querySelector('.mobile-menu');
+  const btn = document.querySelector('.mobile-menu-btn');
+  const body = document.body;
+  
+  menu.classList.toggle('active');
+  btn.classList.toggle('active');
+  
+  // Prevent scrolling when menu is open
+  if (menu.classList.contains('active')) {
+    body.style.overflow = 'hidden';
+  } else {
+    body.style.overflow = '';
+  }
+}
+
+// Add event listener to button
+document.addEventListener('DOMContentLoaded', () => {
+  const menuBtn = document.querySelector('.mobile-menu-btn');
+  if (menuBtn) {
+    menuBtn.addEventListener('click', toggleMobileMenu);
+  }
+});
